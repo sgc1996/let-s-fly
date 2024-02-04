@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="./logo-black.png" rel="icon">
+    <title>Let's Fly.lk</title>
+    <style>
+        :root {
+            /* COLORS */
+            --white: #e9e9e9;
+            --gray: #333;
+            --blue: #0367a6;
+            --lightblue: #008997;
+
+            /* RADII */
+            --button-radius: 0.7rem;
+
+            /* SIZES */
+            --max-width: 980px;
+            --max-height: 420px;
+
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+
+        body {
+            align-items: center;
+            background-color: var(--white);
+            background: url("./bg.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            height: 100vh;
+            place-items: center;
+        }
+
+        .container {
+            background-color: var(--white);
+            border-radius: var(--button-radius);
+            box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+                0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+            height: var(--max-height);
+            max-width: var(--max-width);
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+         /* Add CSS for the first image box */
+         .image-box1 {
+            flex: 1;
+            /* height: 100%; */
+            background: url("./img1.jpg") no-repeat center center; /* Change the URL to your first image */
+            background-size: cover;
+            margin: 10px; /* Adjust this value to control the gap between image boxes */
+            
+        }
+
+        /* Add CSS for the second image box */
+        .image-box2 {
+            flex: 1;
+            /* height: 100%; */
+            background: url("./img2.jpg") no-repeat center center; /* Change the URL to your second image */
+            background-size: cover;
+            margin: 10px; /* Adjust this value to control the gap between image boxes */
+
+        }
+
+        /* Hover style for image-box1 */
+.image-box1:hover {
+    transform: scale(1.05); /* Increase the size of the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    opacity: 0.8; /* Reduce the opacity on hover */
+}
+
+/* Hover style for image-box2 */
+.image-box2:hover {
+    transform: scale(1.05); /* Increase the size of the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    opacity: 0.8; /* Reduce the opacity on hover */
+}
+
+         /* Add media queries for mobile responsiveness */
+         @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                /* max-width: 100%; */
+                height: 80%;
+            }
+
+            .image-box1,
+            .image-box2 {
+                flex: 1;
+                width: 95%;
+                height: auto;
+                /* margin: 10px 0; Adjust this value to control the gap between image boxes on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Image Box -->
+        <a href="ticketing/index.html" class="image-box1"></a>
+
+        <!-- Right Image Box -->
+        <a href="lets-fly/index.html" class="image-box2"></a>
+    </div>
+
+</body>
+</html>
