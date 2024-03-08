@@ -426,7 +426,7 @@ button:focus, button:active {
 }
 
 .main-btn:hover {
-  color: color: #141414;
+  color: #141414;
 }
 
 .main-btn:hover.main-btn-arrow i {
@@ -5105,6 +5105,7 @@ button:focus, button:active {
 
 .footer-details {
   margin-top: 20px;
+  margin-left: -21px;
 }
 
 .footer-details p {
