@@ -3027,6 +3027,37 @@ button:focus, button:active {
   right: 0;
 }
 
+.contact-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.social-media {
+  padding: 15px;
+  text-align: center;
+}
+
+.social-media img {
+  padding: 0px;
+  transition: 0.5s;
+  box-shadow: 3px 2px 20px 1px;
+  border-radius: 50%;
+  width: 300px;
+}
+
+.social-media img:hover {
+  /* width: 155px; */
+  scale: 1.1;
+  /* transition: 0.5s; */
+}
+
 .map-shape {
   position: absolute;
   z-index: -1;
